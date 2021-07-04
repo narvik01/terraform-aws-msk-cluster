@@ -56,31 +56,35 @@ module "msk-cluster" {
 
 | Name | Version |
 |------|---------|
-| terraform | >= 0.12 |
-| aws | >= 3.23 |
-| random | >= 2.1 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.12 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.39 |
+| <a name="requirement_random"></a> [random](#requirement\_random) | >= 2.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| aws | >= 3.23 |
-| random | >= 2.1 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 3.39 |
+| <a name="provider_random"></a> [random](#provider\_random) | >= 2.1 |
 
 ## Modules
 
-No Modules.
+No modules.
 
 ## Resources
 
-| Name |
-|------|
-| [aws_msk_cluster](https://registry.terraform.io/providers/hashicorp/aws/3.23/docs/resources/msk_cluster) |
-| [aws_msk_configuration](https://registry.terraform.io/providers/hashicorp/aws/3.23/docs/resources/msk_configuration) |
-| [aws_security_group_rule](https://registry.terraform.io/providers/hashicorp/aws/3.23/docs/resources/security_group_rule) |
-| [aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/3.23/docs/resources/security_group) |
-| [aws_subnet](https://registry.terraform.io/providers/hashicorp/aws/3.23/docs/data-sources/subnet) |
-| [random_id](https://registry.terraform.io/providers/hashicorp/random/2.1/docs/resources/id) |
+| Name | Type |
+|------|------|
+| [aws_msk_cluster.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/msk_cluster) | resource |
+| [aws_msk_configuration.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/msk_configuration) | resource |
+| [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
+| [aws_security_group_rule.jmx-exporter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.msk-plain](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.msk-tls](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.node_exporter](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [aws_security_group_rule.zookeeper](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group_rule) | resource |
+| [random_id.configuration](https://registry.terraform.io/providers/hashicorp/random/latest/docs/resources/id) | resource |
+| [aws_subnet.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/subnet) | data source |
 
 ## Inputs
 
